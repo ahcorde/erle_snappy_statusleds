@@ -1,0 +1,8 @@
+name: erle-snappy-statusleds
+version: 0.1
+vendor: Erle Robotics <contact@erlerobot.com>
+binaries:
+ - name: bin/erle-snappy-statusleds
+integration:
+ erle-snappy-statusleds:
+  apparmor-profile: meta/erle-snappy-statusleds.apparmor   
