@@ -1,18 +1,14 @@
-#include <tunables/global>
-
-###VAR###
-
-###PROFILEATTACH### (attach_disconnected) {
-        
-  #include <abstractions/base>
-  #include <abstractions/user-tmp>
-
-  # Read-only for the install directory
-  @{CLICK_DIR}/@{APP_PKGNAME}/                   rw,
-  @{CLICK_DIR}/@{APP_PKGNAME}/@{APP_VERSION}/    rw,
-  @{CLICK_DIR}/@{APP_PKGNAME}/@{APP_VERSION}/**  mrklix,
-
-  # files
-  /sys/class/gpio/export    rw,
+{
+	"template": "ubuntu-sdk",
+	"policy_vendor": "ubuntu",
+	"policy_version": 1.3,
+	"policy_groups": [
+		"networking"
+	],
+	"read_path": [
+		"/sys/class/gpio/export"
+	],
+	"write_path": [
+		"/sys/class/gpio"
+	]
 }
-

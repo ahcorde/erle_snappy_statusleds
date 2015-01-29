@@ -5,4 +5,4 @@ binaries:
  - name: bin/erle-snappy-statusleds
 integration:
  erle-snappy-statusleds:
-  apparmor-profile: meta/erle-snappy-statusleds.apparmor   
+  apparmor: meta/erle-snappy-statusleds.apparmor   
