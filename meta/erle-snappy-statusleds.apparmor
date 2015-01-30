@@ -6,9 +6,11 @@
 		"networking"
 	],
 	"read_path": [
-		"/sys/class/gpio/export"
+		"/sys/class/gpio/export",
+		"/proc/sys/kernel/hostname"
 	],
 	"write_path": [
+	        "/sys/class/gpio/export",
 		"/sys/class/gpio"
 	]
 }
